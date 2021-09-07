@@ -48,24 +48,32 @@ for (let i = 0; i < studenti.length; i++) {
     console.log(Studente.cognome);
 
     // let nomeStudente = studenti[i].nome;
-    // let cognomeStudente = studenti["cognome"];   
-    //                                            // perche devo metterlo per forza in una variabile ?
-    // console.log(nomeStudente)  ;              // ""nome" + " " + "cognome""  ?
+    // let cognomeStudente = studenti[i]cognome;   
+                                             
+    // console.log(nomeStudente)  ;              
     // console.log(cognomeStudente)  ;  
 }
 
+// Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+alert("ora inserisci un nuovo studente")
+  
+   let nomeNuovoStudente = prompt("inserisci il tuo nome");
+   let cognomeNuovoStudente = prompt("inserisci il tuo cognome");
+   let etaNuovoStudente = prompt("inserisci la tua età");
+
+//    studenti.push(nome: (nomeNuovoStudente) ; cognome: (cognomeNuovoStudente) ; eta: (etaNuovoStudente) );
+
+let nuovoStudente = {
+    nome : nomeNuovoStudente, 
+    cognome : cognomeNuovoStudente,
+    eta : etaNuovoStudente
+}
+
+studenti.push(nuovoStudente);
+
+console.log(studenti)
 
 
-
-
-
-
-// for (const key in object) {
-//     if (Object.hasOwnProperty.call(object, key)) {
-//         const element = object[key];
-        
-//     }
-// }
 
 
 
