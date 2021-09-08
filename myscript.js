@@ -38,14 +38,14 @@ const studenti = [
         cognome : "Harper",
         eta : "35",
     },
+
 ]; 
 
 //ciclo per stampare nome e cognome dell'oggetto contenuto in array studenti
 for (let i = 0; i < studenti.length; i++) {
 
     let Studente = studenti[i];
-    console.log(Studente.nome);
-    console.log(Studente.cognome);
+    console.log(Studente.nome + " " + Studente.cognome);
 
     // let nomeStudente = studenti[i].nome;
     // let cognomeStudente = studenti[i]cognome;   
@@ -61,17 +61,30 @@ alert("ora inserisci un nuovo studente")
    let cognomeNuovoStudente = prompt("inserisci il tuo cognome");
    let etaNuovoStudente = prompt("inserisci la tua età");
 
-//    studenti.push(nome: (nomeNuovoStudente) ; cognome: (cognomeNuovoStudente) ; eta: (etaNuovoStudente) );
+studenti.push(
+    {
+        nome : nomeNuovoStudente, 
+        cognome : cognomeNuovoStudente,
+        eta : etaNuovoStudente
+    }
 
-let nuovoStudente = {
-    nome : nomeNuovoStudente, 
-    cognome : cognomeNuovoStudente,
-    eta : etaNuovoStudente
-}
+);
 
-studenti.push(nuovoStudente);
+// studenti[studenti.length + 1] = {
+//     nome : nomeNuovoStudente, 
+//     cognome : cognomeNuovoStudente,
+//     eta : etaNuovoStudente
+//         }
 
-console.log(studenti)
+// let nuovoStudente = {
+//     nome : nomeNuovoStudente, 
+//     cognome : cognomeNuovoStudente,
+//     eta : etaNuovoStudente
+// }
+
+// studenti.push(nuovoStudente);
+
+console.table(studenti)
 
 
 
